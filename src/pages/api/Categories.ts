@@ -13,7 +13,7 @@ export default function handler(
       'properties': [
         {
           'id': 1,
-          'name': 'g',
+          'name': 'Ilha muito braba',
           'price': 1000,
           'host': 'Juan',
           'rating': 5,

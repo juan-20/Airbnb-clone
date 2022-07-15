@@ -1,16 +1,28 @@
+import React from 'react'
+import { useState } from 'react'
 import type { InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
-import { Categories } from '../types/Categories.type'
-
+import { Categories, PropertiesType } from '../types/Categories.type'
 import {
   ChevronRightIcon,
   AdjustmentsIcon
 } from '@heroicons/react/solid'
 
+
+
 function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
-  // console.log(exploreData)
+  const [property, setProperty] = useState<PropertiesType[] | undefined>();
+
+
+  async function handleChangeCategories(properties: PropertiesType[] | undefined) {
+
+    console.log(properties, + " eita")
+    if (properties === undefined) console.error('Nada para carregar') 
+    setProperty(properties)  
+
+  }
   return (
     <div>
       <Head>
@@ -26,7 +38,11 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
           // Media querry:
           md:px-10'>
         {exploreData.map((card) => (
-            <button key={card.title} className='hover:border-b-4 border-indigo-100'>
+            <button
+             onClick={() => {
+              handleChangeCategories(card.properties)
+             }}
+             key={card.title} className='hover:border-b-4 border-indigo-100'>
             <Image src={card.image} width='24px' height='24px' objectFit='contain' objectPosition='left' />
             <p>{card.title}</p>
             </button>
@@ -41,6 +57,21 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
               <p className='text-sm'>Filtros</p>
             </div>
           </div>
+          </div>
+
+
+          <div className="places">
+            {property === undefined ? 'nada a mostrar.' : 'Carregou ehehhe'}
+            {property?.map((properties) => (
+              <>
+              <h1>{properties.name}</h1>
+              <p>Localização: {properties.localization}</p>
+              <p>Dono: {properties.host}</p>
+              <p>Preço: {properties.price} dinheiros</p>
+              <p>Estrelas {properties.rating}</p>
+              </>
+            ))}
+        
           </div>
       </main>
 
