@@ -7,10 +7,12 @@ import Header from '../components/Header'
 import { Categories, PropertiesType } from '../types/Categories.type'
 import {
   ChevronRightIcon,
-  AdjustmentsIcon
+  AdjustmentsIcon,
+  StarIcon
 } from '@heroicons/react/solid'
 import Carrousel from '../components/Carrousel'
 import CarrouselImage from '../components/Carrousel'
+import Footer from '../components/Footer'
 
 
 
@@ -36,7 +38,7 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
 
       <main>
         <div id="select" className='flex gap-10'>
-        <div className='flex flex-row gap-10 p-5 overflow-x-auto w-5/6 whitespace-nowrap
+        <div className='flex flex-row gap-10 p-5 overflow-x-auto w-5/6 whitespace-nowrap scrollbar-hide
           // Media querry:
           md:px-10'>
         {exploreData.map((card) => (
@@ -63,21 +65,32 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
 
 
           <div className="places">
-            {property === undefined ? 'nada a mostrar.' : 'Carregou ehehhe'}
+            {property === undefined ? 'Sem nada pra Alugar irmão' : 'Carregou ehehhe'}
             {property?.map((properties) => (
               <div key={properties.id}>
+              {/* {properties?.images.map((src, id) => (
+                 
+                <Image src={src.url} key={id} width={200} height={100} ></Image>
+                
+                ))}  */}
+                <Image src={properties.images[0].url} width={200} height={100} ></Image>
               <h1>{properties.name}</h1>
-              <p>Localização: {properties.localization}</p>
-              <p>Dono: {properties.host}</p>
-              <p>Preço: {properties.price} dinheiros</p>
-              <p>Estrelas {properties.rating}</p>
-                <CarrouselImage />
-              {/* {properties?.images.map((src, id) => ( */}
-              {/* ))} */}
+              <p>{properties.localization}</p>
+              <p>R${properties.price} / noite </p>
+              <div className="rating">
+                <p>Estrelas: {properties.rating}
+                <StarIcon className='h-4 text-black' />
+                </p>
+              </div>
               </div>
             ))}
+
         
           </div>
+
+          <section>
+            <Footer />
+          </section>
       </main>
 
 

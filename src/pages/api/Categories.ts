@@ -13,18 +13,35 @@ export default function handler(
       'properties': [
         {
           'id': 1,
-          'name': 'Ilha muito braba',
-          'price': 1000,
+          'name': 'Ilha deslumbrante no mar com piscina KALUA',
+          'price': 11.748,
           'host': 'Juan',
-          'rating': 5,
-          'localization': 'longe',
-          'description': 'test',
+          'rating': 4.8,
+          'localization': 'Provincia de Cartagena, Bolívar, Colômbia',
+          'description': 'Aproveite nossa ilha privada exclusiva localizada nas Ilhas Rosario. O lugar tem um estilo tropical que combina com a bela paisagem, perfeito para se desconectar do cotidiano enquanto é cercado por um mar de sete cores. A ilha tem 4 quartos dos quais você pode sentir o cheiro do mar, e uma piscina para desfrutar do lugar paradisíaco enquanto você sente o vento em seu rosto... Aproveite nosso oásis.',
           images: [
             {
             url: 'https://a0.muscache.com/im/pictures/miso/Hosting-49227437/original/7cf358b9-e8c5-4067-9ac5-014784387e22.jpeg?im_w=1200',
             },
             {
             url: 'https://a0.muscache.com/im/pictures/miso/Hosting-49227437/original/5b50ac57-8eca-4b8b-be51-43a7155ed37a.jpeg?im_w=720',
+            },
+        ]
+        },
+        {
+          'id': 2,
+          'name': 'NEW ISLA PRIVADA',
+          'price': 6.689,
+          'host': 'Juan',
+          'rating': 5.0,
+          'localization': 'Provincia de Cartagena, Bolívar, Colômbia',
+          'description': 'A Ilha Baru é um lugar mágico nas Ilhas Baru, em Cartagena, ideal para se desconectar da cidade, sua localização é estratégica porque está completamente cercada por mar, o que a torna uma verdadeira ilha. A casa está em 2 andares com 5 quartos confortáveis com ar condicionado e 4 casas de banho que servem os hóspedes, sala aberta, sala de jantar, cozinha, áreas de convés para banhos de sol ou pôr do sol e áreas verdes em toda a ilha.O preço inclui 3 pessoas ao serviço dos hóspedes.',
+          images: [
+            {
+            url: 'https://a0.muscache.com/im/pictures/4d128a6b-7b07-41fb-9637-8e0fe0157203.jpg?im_w=1200',
+            },
+            {
+            url: 'https://a0.muscache.com/im/pictures/3e3f797d-5e8e-4571-af57-0c1e6e752dde.jpg?im_w=1200',
             },
         ]
         }
