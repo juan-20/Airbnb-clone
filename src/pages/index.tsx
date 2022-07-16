@@ -9,6 +9,8 @@ import {
   ChevronRightIcon,
   AdjustmentsIcon
 } from '@heroicons/react/solid'
+import Carrousel from '../components/Carrousel'
+import CarrouselImage from '../components/Carrousel'
 
 
 
@@ -63,13 +65,16 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
           <div className="places">
             {property === undefined ? 'nada a mostrar.' : 'Carregou ehehhe'}
             {property?.map((properties) => (
-              <>
+              <div key={properties.id}>
               <h1>{properties.name}</h1>
               <p>Localização: {properties.localization}</p>
               <p>Dono: {properties.host}</p>
               <p>Preço: {properties.price} dinheiros</p>
               <p>Estrelas {properties.rating}</p>
-              </>
+                <CarrouselImage />
+              {/* {properties?.images.map((src, id) => ( */}
+              {/* ))} */}
+              </div>
             ))}
         
           </div>
