@@ -11,9 +11,7 @@ import {
 } from '@heroicons/react/solid'
 import Footer from '../components/Footer'
 import Property from '../components/Property'
-import NotFound from '../components/notFound'
-
-
+import NotFound from '../components/NotFound'
 
 function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
   const [property, setProperty] = useState<PropertiesType[] | undefined>();
