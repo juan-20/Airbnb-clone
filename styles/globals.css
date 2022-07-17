@@ -10,11 +10,19 @@
     font-family: "Airbnb-Cereal-title";
     src: url("../src/assets/font/AirbnbCereal_W_XBd.otf");
 }
+@font-face {
+    font-family: "Airbnb-Cereal-subTile";
+    src: url("../src/assets/font/AirbnbCereal_W_Bk.otf");
+}
 
 p, a{
     font-family: "Airbnb-Cereal-text";
 }
 
-h1, h5{
+h1{
     font-family: "Airbnb-Cereal-title";
+}
+
+h5{
+    font-family: "Airbnb-Cereal-subTitle";
 }

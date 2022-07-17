@@ -3,14 +3,16 @@ export type ImagesProps = {
 } 
 
 export  type PropertiesType ={
+id: number
 name: string,
 price: number,
 localization: string,
-rating: number,
-images: ImagesProps[],
 description: string,
 host: string,
-id: number
+latitude: number,
+longitude: number
+rating?: number,
+images: ImagesProps[],
 }
   
 export type Categories = {

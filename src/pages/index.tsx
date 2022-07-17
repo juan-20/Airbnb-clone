@@ -8,11 +8,10 @@ import { Categories, PropertiesType } from '../types/Categories.type'
 import {
   ChevronRightIcon,
   AdjustmentsIcon,
-  StarIcon
 } from '@heroicons/react/solid'
-import Carrousel from '../components/Carrousel'
-import CarrouselImage from '../components/Carrousel'
 import Footer from '../components/Footer'
+import NotFound from '../components/notFound'
+import Property from '../components/Property'
 
 
 
@@ -37,7 +36,9 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
       <Header/>
 
       <main>
-        <div id="select" className='flex gap-10'>
+
+        {/* Categories Select */}
+        <div id="select" className='flex gap-10 sticky'>
         <div className='flex flex-row gap-10 p-5 overflow-x-auto w-5/6 whitespace-nowrap scrollbar-hide
           // Media querry:
           md:px-10'>
@@ -46,7 +47,8 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
              onClick={() => {
               handleChangeCategories(card.properties)
              }}
-             key={card.title} className='hover:border-b-4 border-indigo-100'>
+             aria-label={card.title}
+             key={card.title} className='focus:border-b-4 border-indigo-100 '>
             <Image src={card.image} width='24px' height='24px' objectFit='contain' objectPosition='left' />
             <p>{card.title}</p>
             </button>
@@ -64,33 +66,21 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
           </div>
 
 
-          <div className="places">
-            {property === undefined ? 'Sem nada pra Alugar irmão' : 'Carregou ehehhe'}
+        {/* Properties  */}
+            {property === undefined ? (
+              <NotFound />
+            ) : (
+            <div className="places grid grid-cols-4 p-5 w-321px h-400px gap-10">
             {property?.map((properties) => (
-              <div key={properties.id}>
-              {/* {properties?.images.map((src, id) => (
-                 
-                <Image src={src.url} key={id} width={200} height={100} ></Image>
-                
-                ))}  */}
-                <Image src={properties.images[0].url} width={200} height={100} ></Image>
-              <h1>{properties.name}</h1>
-              <p>{properties.localization}</p>
-              <p>R${properties.price} / noite </p>
-              <div className="rating">
-                <p>Estrelas: {properties.rating}
-                <StarIcon className='h-4 text-black' />
-                </p>
-              </div>
-              </div>
+            <Property PropertiesProps={properties}  />
             ))}
+            </div>
+          )}
 
-        
-          </div>
+          <footer>
+          <Footer />
+          </footer>
 
-          <section>
-            <Footer />
-          </section>
       </main>
 
 
