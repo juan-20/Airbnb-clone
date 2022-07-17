@@ -1,6 +1,4 @@
 import { StarIcon } from '@heroicons/react/solid';
-import React, { useState } from 'react'
-import { PropertiesType } from '../types/Categories.type';
 import Image from 'next/image'
 export default function Property({PropertiesProps}: any ) {
     console.log(PropertiesProps)

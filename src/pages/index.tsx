@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import type { InferGetStaticPropsType, NextPage } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
@@ -10,8 +10,8 @@ import {
   AdjustmentsIcon,
 } from '@heroicons/react/solid'
 import Footer from '../components/Footer'
-import NotFound from '../components/notFound'
 import Property from '../components/Property'
+import NotFound from '../components/notFound'
 
 
 
