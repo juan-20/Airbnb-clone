@@ -70,7 +70,8 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
             {property === undefined ? (
               <NotFound />
             ) : (
-            <div className="places grid grid-cols-4 p-5 w-321px h-400px gap-10">
+            <div className="places grid grid-cols-1 p-5 w-321px h-400px gap-10
+            md:grid-cols-3 lg:grid-cols-4">
             {property?.map((properties) => (
             <Property PropertiesProps={properties}  />
             ))}
