@@ -8,6 +8,7 @@ import { Categories, PropertiesType } from '../types/Categories.type'
 import {
   ChevronRightIcon,
   AdjustmentsIcon,
+  ChevronLeftIcon,
 } from '@heroicons/react/solid'
 import Footer from '../components/Footer'
 import Property from '../components/Property'
@@ -31,30 +32,43 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>
+      <Header />
 
       <main>
 
         {/* Categories Select */}
-        <div id="select" className='flex gap-10 sticky'>
-        <div className='flex flex-row gap-10 p-5 overflow-x-auto w-5/6 whitespace-nowrap scrollbar-hide
+        <div id="select" className='flex sticky'>
+              <div  onClick={() => {
+                document.getElementById('categories')!.scrollLeft  -= 500;
+               }} id='back' className="z-1000 pl-10 flex justify-center items-center">
+              <div className="flex items-center justify-center border-2 rounded-full cursor-pointer w-7 h-7">
+                   <ChevronLeftIcon id='slideRight' className='h-4'/>
+               </div>
+               </div>
+        <div id='categories' className='flex flex-row overflow-x-auto w-5/6 whitespace-nowrap scrollbar-hide scroll-smooth 
           // Media querry:
           md:px-10'>
+
+
         {exploreData.map((card) => (
+          <>
             <button
              onClick={() => {
               handleChangeCategories(card.properties)
              }}
              aria-label={card.title}
-             key={card.title} className='focus:border-b-4 border-indigo-100 '>
+             key={card.title} className='focus:border-b-4 border-indigo-100 p-5 '>
             <Image src={card.image} width='24px' height='24px' objectFit='contain' objectPosition='left' />
             <p>{card.title}</p>
             </button>
+            </>
         ))}
         </div>
         <div className=" bg-white flex justify-center items-center gap-4">
             <div className=" flex items-center justify-center border-2 rounded-full cursor-pointer w-7 h-7">
-               <ChevronRightIcon className='h-4'/>
+               <ChevronRightIcon id='slideRight' onClick={() => {
+                document.getElementById('categories')!.scrollLeft  += 500;
+               }} className='h-4'/>
             </div>
             <div className=" flex items-center space-x-2 border-2 p-2 rounded-lg cursor-pointer w-22 h-12">
               <AdjustmentsIcon className='h-4' />

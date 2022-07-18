@@ -22,3 +22,9 @@ p, a{
 h1, h5{
     font-family: "Airbnb-Cereal-title";
 }
+
+@media only screen and (max-width: 640px) {
+    .rdrDefinedRangesWrapper{
+        display: none;
+    }
+}

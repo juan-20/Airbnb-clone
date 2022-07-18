@@ -4,8 +4,7 @@ export default function Property({PropertiesProps}: any ) {
     console.log(PropertiesProps)
 
   return (
-    
-        <div className='grid' key={PropertiesProps.id}>
+        <div className='grid cursor-pointer'   key={PropertiesProps.id}>
                 <Image className='rounded-md' src={PropertiesProps.images[0].url} width={321} height={305} ></Image>
                 <h5 className='font-semibold'>{PropertiesProps.name}</h5>
                 <p>{PropertiesProps.localization}</p>  
@@ -21,6 +20,5 @@ export default function Property({PropertiesProps}: any ) {
                 </div>
                 </div>
         </div>
-
   )
 }
