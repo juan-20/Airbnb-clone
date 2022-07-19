@@ -28,7 +28,7 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
       <Head>
-        <title>Airbnb - Clone</title>
+        <title>Airbnb - clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
