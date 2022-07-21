@@ -1,5 +1,6 @@
 export type ImagesProps = {
  url: string
+ id?: number
 } 
 
 export  type PropertiesType ={
