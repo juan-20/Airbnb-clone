@@ -21,23 +21,26 @@ export default function Search({searchResults}: InferGetStaticPropsType<typeof g
       </Head>
       <Header/>
 
-      <main className="places p-5 w-321px h-400px gap-10" >
+      <main className="places" >
       <p className='p-5 font-semibold'>
         {resultCount} Resultados
       </p>
 
-        <div className="places grid grid-cols-4 gap-10"  onLoad={() => {
+        <div  onLoad={() => {
           {setResultCount(resultCount + 1)}
         }}>
-      {searchResults.map((result: PropertiesType) => (
-        <>
-        {result.localization === location ? (
-           <Property PropertiesProps={result} />
-           ) 
-           : ''}
-        </>
-       )
-       )}
+          <div className="places grid grid-cols-1 p-5 w-321px h-400px gap-10
+              md:grid-cols-3 lg:grid-cols-4">
+                {searchResults.map((result: PropertiesType) => (
+                      <>
+                        {result.localization === location ? (
+                        <Property PropertiesProps={result} />
+                        ) 
+                        : ''}
+                       </>
+                )
+                )}
+           </div>
        </div>
       </main>
 

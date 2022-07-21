@@ -9,8 +9,8 @@ price: number,
 localization: string,
 description: string,
 host: string,
-latitude: number,
-longitude: number
+latitude?: number,
+longitude?: number
 rating?: number,
 images: ImagesProps[],
 }

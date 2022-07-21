@@ -183,6 +183,228 @@ export default function handler(
             },
           ]
         },
-        
+        {
+          'id': 10,
+          'name': 'SALVADOR QUARTO FRENTE AO MAR',
+          'price': 50,
+          'host': 'Juan',
+          'rating': 5,
+          latitude: -13.007651,  
+          longitude: -38.508267,
+          'localization': 'Salvador',
+          'description': 'Ótimo para estudante,( Mulher de preferencia )frente ao mar ,50 metros praia ,200 metros Shopping Barra,...comercio farto e variado com vários supermercados ,restaurantes ,lanchonetes e farmácias,....varias agencias bancarias....calçadão na orla para pratica de atividades físicas.',
+          images: [
+            {
+            url: 'https://a0.muscache.com/im/pictures/777e0d41-ec20-4a74-b27b-799f84f01287.jpg?im_w=720',
+            },
+            {
+            url: 'https://a0.muscache.com/im/pictures/c374e070-f1d2-4c14-a577-fb90db171b85.jpg?im_w=1200',
+            },
+        ]
+        },
+        {
+          'id': 11,
+          'name': 'Aconchegante e colado na praia do Farol da Barra.',
+          'price': 150,
+          'host': 'Juan',
+          latitude: -13.011228,   
+          longitude: -38.504481,
+          'localization': 'Salvador',
+          'description': 'Apartamento novo, 1 quarto, 1 banheiro, cozinha, lavanderia, mobiliado, FAROL DA BARRA.',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/252bdc02-f750-480b-b7ca-9f9f19f2a75a.jpg?im_w=720',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/1105553/e3eb4763_original.jpg?im_w=1200',
+            },
+        ]
+        },
+        {
+          'id': 12,
+          'name': 'SALVADOR QUARTO FRENTE AO MAR',
+          'price': 810,
+          'host': 'Juan',
+          'rating': 4.68,
+          latitude: -24.017955, 
+          longitude: -46.277245,  
+          'localization': 'Guarujá',
+          'description': 'Belíssima cobertura, com 220 metros quadrados, localizada a duas quadras da praia, em ótimo estado, com ampla área externa com piscina, churrasqueira, jardim e espaço gourmet. Completamente equipada e perfeita para passar grandes momentos na companhia de amigos e familiares. Atenção às regras da prefeitura sobre acesso a Cidade, especialmente durante a pandemia de Covid-19. Sobre o tema, siga a orientação para prevenção dadas pelas entidades médicas locais e internacionais para sua segurança.',
+          images: [
+            {
+            url: 'https://a0.muscache.com/im/pictures/8690b59a-a221-4bf0-b0d2-8dcc7e3dbb7e.jpg?im_w=1200',
+            },
+            {
+            url: 'https://a0.muscache.com/im/pictures/4182e9c3-9318-402f-8535-e79c68b3708a.jpg?im_w=720',
+            },
+        ]
+        },
+        {
+          'id': 13,
+          'name': 'Casa Acantilado',
+          'price': 2755,
+          'host': 'Juan',
+          'localization': 'Espanha',
+          'description': 'Esta propriedade de 2 andares é composta por uma sala, uma cozinha totalmente equipada com máquina de lavar louça, 3 quartos e 3 casas de banho (1 com banheira, os outros 2 com duche) e pode, portanto, acomodar 6 pessoas. Comodidades adicionais incluem Wi-Fi, ar condicionado em toda a casa, uma máquina de lavar roupa, uma máquina de secar roupa, bem como TV satélite. Um berço de bebé e uma cadeira de refeição estão disponíveis mediante solicitação. O quarto 1 tem 1 cama queen-size. O quarto 2 tem 1 cama de casal. O quarto 3 tem 2 camas de solteiro.O destaque deste alojamento é a sua área exterior privada com piscina (que pode ser aquecida por 5 euros por noite), jardim, terraço aberto, churrasqueira e duche exterior. Partilhe uma deliciosa refeição no seu terraço enquanto desfruta da fantástica vista para o mar e as montanhas próximas.',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/prohost-api/Hosting-584469386220279136/original/227d4c26-43d5-42da-ad84-d039515c0bad.jpeg?im_w=1200',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/prohost-api/Hosting-584469386220279136/original/dd489167-14b9-464e-a291-e8390519b1dc.jpeg?im_w=720',
+            },
+        ]
+        },
+        {
+          'id': 14,
+          'name': 'Boa Esperanca Stellan',
+          'price': 710,
+          'host': 'Juan',
+          'localization': 'Paraty',
+          'description': 'Casa de campo calma e tranquila com três quartos, cozinha totalmente equipada, sala de estar espaçosa e um enorme terraço com vistas magníficas. Há também uma bela piscina com vistas igualmente deslumbrantes que é compartilhada com a casa vizinha. Esta casa de bom gosto está localizada a 7 km da cidade de Paraty.',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/0112a195-6694-4182-92b5-c8d2879a0e30.jpg?im_w=720',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/5f0a5949-6b03-4f81-a22b-a33c0e3be11b.jpg?im_w=720',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/2e5b29d1-53c4-4a67-aa37-b17710271300.jpg?im_w=720',
+            },
+        ]
+        },
+        {
+          'id': 15,
+          'name': 'Design House na floresta tropical com cascata privada',
+          'price': 1003,
+          'host': 'Juan',
+          'localization': 'paraty',
+          'description': 'Casa de design exclusivo inspirada na arquitetura da tribo Ashaninka imersa na floresta tropical com uma cachoeira privada a 300 metros de distância da sua porta. Toda a água para a casa vem de uma fonte natural nesta casa totalmente integrada à natureza. Fácil acesso de carro ou ônibus a 20 minutos do centro de Paraty. A casa fica em propriedade privada de um amigo de longa data compartilhando mais de 200.000 metros quadrados com apenas outras 5 casas com total segurança e privacidade',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/miso/Hosting-22319550/original/e08d07a2-4eaa-4930-9c22-132072aee408.jpeg?im_w=1200',
+            },
+        ]
+        },
+        {
+          'id': 16,
+          'name': 'O Cocar: geminada c/ hidro de frente p/ cachoeira',
+          'price': 1003,
+          'host': 'Juan',
+          'localization': 'São Paulo',
+          'description': 'Cabana geminada com A Flecha, no Cambuim Cabanas, um refúgio paradisíaco nas montanhas da Serra Catarinense com cachoeiras exclusivas, tornando o local excelente para se visitar também no verão.',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/40588b31-71f1-4b0f-a755-ea3005d246c3.jpg?im_w=1200',
+            },
+          ]
+        },
+        {
+          'id': 17,
+          'name': 'Contemporânea e sustentável no meio da Natureza',
+          'price': 717,
+          'host': 'Juan',
+          'localization': 'Rio de janeiro',
+          'description': 'Uma oportunidade única para viver nesta casa e desfrutar de um descanso cercado pela natureza com o melhor acesso as praias e ao centro de Ubatuba. Localizada no condominio Ressaca, com segurança 24 hs. Internet Wi-Fi por fibra óptica.',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/612c91c5-106c-42c3-907e-c6d9675d88c5.jpg?im_w=720',
+            },
+          ]
+        },
+        {
+          'id': 18,
+          'name': 'O Esconderijo do Ártico, o Njalla, a casa da torre.',
+          'price': 1059,
+          'host': 'Juan',
+          'localization': 'Noruega',
+          'description': 'Nossa torre - a Njalla - é uma versão lúdica emblemática de uma casa de comida e armazenamento Sami. Nossa coluna é de aço e medida para ventos de até 100 m/s. Ventos que nunca tivemos aqui. O Njalla é oferecido apenas algumas vezes como cápsula de dormir. Queremos que a maior parte do ano seja uma casa de leitura compartilhada, mas às vezes você precisa dormir lá. ',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/6e98e30a-cc26-4110-a06f-072e7663f07d.jpg?im_w=1200',
+            },
+          ]
+        },
+        {
+          'id': 19,
+          'name': 'Montanha Alvorada',
+          'price': 650,
+          'host': 'Juan',
+          'localization': 'Santa Catarina',
+          'description': 'nosso chalé conta com 48 mts quadrados ,bem pensados e distribuídos entre uma cozinha completa ,uma sala de TV.banheiro bem amplo,e um mezanino com hidromassagem para casal,cama de casal 1.38x198.a vista das montanhas ,que temos em nossa pousada ,dispensa comentários,é inclivellllll.sem dúvidas ,uma das melhores ,entre as pousadas.tambem agendamos vôos de balão,trilhas ,cavalgada, quadriciclo, entre outros...',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/5558d351-5cfa-4869-bffa-44905a72f0fd.jpg?im_w=1200',
+            },
+          ]
+        },
+        {
+          'id': 20,
+          'name': 'Passeio na floresta',
+          'price': 759,
+          'host': 'Juan',
+          'localization': 'Belo Horizonte',
+          'description': 'NATURAVE é uma experiência de estadia única no topo das árvores. Uma cabana única onde, no conforto do seu quarto, você pode desfrutar dos pássaros cantando, visitando as famílias de macacos que passam na montanha bem na frente de você ou apenas desfrutar de uma xícara de café cercado pela paz de Monteverde.',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/379f84f9-d418-41ad-b1b3-e1f9d007124d.jpg?im_w=1200',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/miso/Hosting-53292029/original/b7fae438-a4e5-4c8e-9bf5-c26c7610f25d.jpeg?im_w=1200',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/miso/Hosting-53292029/original/6e8ba355-a167-4662-98b8-3eb543c841f5.jpeg?im_w=720',
+            },
+          ]
+        },
+        {
+          'id': 21,
+          'name': 'Atelier House',
+          'price': 8129,
+          'host': 'Juan',
+          'localization': 'Barbados',
+          'description': 'Caribbean sunshine streams in floor-to-ceiling windows to light up this modern take on a beach house in Carlton Ridge. The infinity pool seems to spill into a stand of mahogany trees leading down to the sea, and a wraparound terrace has spots for lounging, sitting, and dining. A double-height great room overlooks gardens with lilies and palms native to Barbados. It’s minutes to west coast beaches.',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/monet/Luxury-54345978/original/81e4484e-7ec5-4499-8f13-bc26432c3bd1?im_w=720',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/monet/Luxury-54345978/original/688af106-8470-4a35-b219-4218e11bf9d0?im_w=720',
+            },
+          ]
+        },
+        {
+          'id': 22,
+          'name': 'Cobertura com a melhor vista de Paris',
+          'price': 1992,
+          'host': 'Juan',
+          'localization': 'Paris',
+          'description': 'ninguém em frente ao seu terraço extraordinário, mas uma vista única de todo o Paris a partir de seu loft amplamente aberto para o céu cheio Torre Eiffel a 100 m',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/12015095/160e3020_original.jpg?im_w=1200',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/6883400f-609c-4a5c-b6fd-b70d30a2a1fe.jpg?im_w=720',
+            },
+            {
+              url: 'https://a0.muscache.com/im/pictures/12015176/7d6e605e_original.jpg?im_w=1200',
+            },
+          ]
+        },
+        {
+          'id': 23,
+          'name': 'Brand New Apartamento perto da praia',
+          'price': 332,
+          'host': 'Juan',
+          'localization': 'Espanha',
+          'description': 'Excelente apartamento todo remodelado e novo em uma residência muito tranquila e tranquila perto do mar, lojas, estação ferroviária e aeroporto.   A uma curta distância de tudo o que você precisa.',
+          images: [
+            {
+              url: 'https://a0.muscache.com/im/pictures/2b73c82c-871a-4eb7-bfcf-0138a50822f6.jpg?im_w=1200',
+            },
+          ]
+        }
   ])
 }

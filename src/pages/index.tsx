@@ -14,13 +14,20 @@ import Footer from '../components/Footer'
 import Property from '../components/Property'
 import NotFound from '../components/NotFound'
 
-function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
+function Home({exploreData, propertyData}: InferGetStaticPropsType<typeof getStaticProps>) {
   const [property, setProperty] = useState<PropertiesType[] | undefined>();
+  const [allProperty, setAllProperty] = useState<PropertiesType[] | undefined>();
 
+  async function Load(){
+    
+    console.log(propertyData)
+    setAllProperty(propertyData)
+    console.log('entrou')
+    console.log(allProperty + 'teste')
+  }
 
   async function handleChangeCategories(properties: PropertiesType[] | undefined) {
-
-    console.log(properties, + " eita")
+    
     if (properties === undefined) console.error('Nada para carregar') 
     setProperty(properties)  
 
@@ -34,7 +41,7 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
 
       <Header />
 
-      <main>
+      <main onLoad={Load}>
 
         {/* Categories Select */}
         <div id="select" className='flex sticky'>
@@ -80,13 +87,20 @@ function Home({exploreData}: InferGetStaticPropsType<typeof getStaticProps>) {
 
         {/* Properties  */}
             {property === undefined ? (
-              <NotFound />
+              
+              <div className="places grid grid-cols-1 p-5 w-321px h-400px gap-10
+               md:grid-cols-3 lg:grid-cols-4">
+              {propertyData.map(e => (
+              <Property PropertiesProps={e}  />
+              ))}
+              </div>
+
             ) : (
-            <div className="places grid grid-cols-1 p-5 w-321px h-400px gap-10
-            md:grid-cols-3 lg:grid-cols-4">
-            {property?.map((properties) => (
-            <Property PropertiesProps={properties}  />
-            ))}
+              <div className="places grid grid-cols-1 p-5 w-321px h-400px gap-10
+              md:grid-cols-3 lg:grid-cols-4">
+              {property?.map((properties) => (
+              <Property PropertiesProps={properties}  />
+              ))}
             </div>
           )}
 
@@ -106,11 +120,14 @@ export default Home
 export const getStaticProps = async () => {
   let host = process.env.API
   const res = await fetch(host + '/api/Categories')
+  const resProperty = await fetch(host + '/api/Properties')
+  const propertyData: PropertiesType[] = await resProperty.json()
   const exploreData: Categories[] = await res.json()
 
   return{
     props:{
-      exploreData
+      exploreData,
+      propertyData
     }
   }
   
